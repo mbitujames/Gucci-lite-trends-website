@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <style >
+      body {
+    margin: 0px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em; 
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid purple;
+}
+
+.nav-link-wrapper a:hover {
+    color: purple
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the marcus image inside this block */
+.imgblock {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Marcus image */
+img.marcus {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to blocks */
+.block {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+    </style>
+</head>
+<body>
+    <h2>About page</h2>
+   
+
+    <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The navigation menu -->
+<div class="navbar">
+   <div class="navbar">
+      <div class="imgcontainer">
+        <img src="" width-125px>
+      </div>
+        <nav>
+    <ul id="menuItems">
+        <li><a href="index.html">Home</a></li>
+         <li><a href="products">products</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="registration.html">Registration</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    </div>
+  <a href="#styles">Styles</a>
+  <div class="subnav">
+    <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#men">Men</a>
+      <a href="#ladies">Ladies</a>
+      <a href="#jewels">Jewels</a>
+      <a href="#babies">Babies</a>
+      <a href="#shoes">Shoes</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Package <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#bring">Bring</a>
+      <a href="#deliver">Deliver</a>
+      <a href="#trace">Trace</a>
+      <a href="#express">Express</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Link 1</a>
+      <a href="#link2">Link 2</a>
+      <a href="#link3">Link 3</a>
+      <a href="#link4">Link 4</a>
+    </div>
+  </div>
+
+  <a href="#contact">Contact</a>
+  <div class="col-2">
+    <img src=" category-1.jpg" alt="Lady" >
+    </div>
+</div>
+</body>
+</html>
